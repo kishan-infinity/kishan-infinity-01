@@ -1,0 +1,643 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+    <!-- Basic metas
+    ======================================== -->
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta charset="utf-8">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.svg">
+    <!-- Page Title
+    ======================================== -->
+    <title>Dentalx - Dentist & Dental Clinic NextJS Template | Documentation</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=arimo:400,500,600,700" rel="stylesheet" />
+    <!-- Syntax Highlighter -->
+    <link rel="stylesheet" type="text/css" href="assets/syntax-highlighter/styles/shCore.css" media="all">
+    <link rel="stylesheet" type="text/css" href="assets/syntax-highlighter/styles/shThemeDefault.css" media="all">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="assets/css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/vendor/fontawesome-all.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/vendor/perfect-scrollbar.css">
+    <!-- Custom css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+</head>
+
+<body>
+    <!--[if lte IE 9]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
+    <!-- Header starts -->
+    <a href="#top" class="back-to-top"><i class="fa fa-arrow-up"></i></a>
+    <header class="page-header sticky-top" id="top">
+        <div class="container-fluid">
+            <nav class="page-nav">
+                <a href="https://alithemes.com" class="nav-brand">
+                    <img src="assets/images/logo-alithemes.svg" alt="logo" width="158">
+                </a>
+                <div class="nav-list">
+                    <a href="https://dentalx-nextjs-demo.vercel.app/" target="_blank"><i class="fas fa-laptop mr-2"></i>Live Demo</a>
+                    <a href="https://alithemes.ticksy.com/" target="_blank"><i class="fas fa-paper-plane   mr-2"></i>Support</a>
+                    <a href="#" class="toggle-navbar"><i class="far fa-bars"></i></a>
+                </div>
+                <!-- End of .nav-list -->
+            </nav>
+        </div>
+        <!-- End of .container -->
+    </header>
+    <!-- End of .page-header -->
+    <!-- End of .main-content -->
+    <div class="main-content-wrapper">
+        <div class="container-full">
+            <div class="main-content">
+                <aside class="sidebar-navigation sticky-top">
+                    <nav class="nav">
+                        <h4 class="mb-4 mt-5">Table of content</h4>
+                        <form action="#" class="search-form m-b-20">
+                            <div class="input-group">
+                                <input type="text" class="search-input" placeholder="Search item">
+                            </div>
+                        </form>
+                        <ol class="doc-nav">
+                            <li><a class="nav-link" href="#overview">OVERVIEW</a>
+                                <ol>
+                                    <li><a class="nav-link" href="#features">Features</a></li>
+                                    <li><a class="nav-link" href="#change-log">Change logs</a></li>
+                                </ol>
+                            </li>
+                            <li><a class="nav-link" href="#get-started">GET STARTED</a>
+                                <ol>
+                                    <li><a href="#folder-structure">Folder Structure</a></li>
+                                    <li><a href="#app-structure">Structure</a></li>
+                                    <li><a href="#dependencies">Dependencies</a></li>
+                                    <li><a href="#create-page">Create a Page</a></li>
+                                    <li><a href="#routing">Routing</a></li>
+                                    <li><a href="#deployment">Deployment</a></li>
+                                </ol>
+                            </li>
+                            <li><a class="nav-link" href="#update">UPDATE</a></li>
+                            <li><a class="nav-link" href="#creadit">SOURCES & CREDITS</a></li>
+                            <li><a class="nav-link" href="#thanks">THANK YOU</a></li>
+                        </ol>
+                    </nav>
+                </aside>
+                <main class="main pt-5">
+                    <div class="filterable-wrapper">
+                        <section>
+                            <h1 class="mt-5 mb-0">
+                                <a href="https://dentalx-nextjs-demo.vercel.app/" target="_blank">
+                                    Dentalx
+                                </a>
+                            </h1>
+                            <h3 class="mt-0 mb-30">Dentist & Dental Clinic NextJS Template</h3>
+                            <h4 class="mt-0">DOCUMENTATION</h4>
+                            <ul class="text-small doc-infor">
+                                <li>Doc version: 1.0</li>
+                                <li>Created: 16 May 2025</li>
+                                <li>Last update: 16 May 2025</li>
+                            </ul>
+                            <h3 class="mb-5"></h3>
+                        </section>
+                        <section>
+                            <h2>Overview</h2>
+                            <p><strong>DentalX NextJS</strong> is a cutting-edge, feature-rich template designed specifically for dental clinics, healthcare professionals, and medical practices. Built with modern web technologies, this template offers an exceptional foundation for creating a professional online presence.</p>
+
+                            <h3>Key Technologies</h3>
+                            <ul>
+                                <li><strong>Next.js 15:</strong> Built with the latest version of Next.js framework (v15.3.2) leveraging App Router for enhanced performance and SEO.</li>
+                                <li><strong>React 18:</strong> Utilizes the power of React for building interactive user interfaces.</li>
+                                <li><strong>TypeScript:</strong> Fully typed codebase for better code quality and developer experience.</li>
+                                <li><strong>Bootstrap 5:</strong> Responsive layout based on the popular Bootstrap framework.</li>
+                                <li><strong>GSAP Animation:</strong> Premium animations powered by GreenSock Animation Platform.</li>
+                                <li><strong>Swiper.js:</strong> Smooth and responsive slider components.</li>
+                                <li><strong>AOS (Animate On Scroll):</strong> Beautiful scroll-based animations.</li>
+                                <li><strong>Isotope Layout:</strong> Advanced filtering and sorting features for service galleries.</li>
+                                <li><strong>React Modal Video:</strong> Integrated video popup functionality.</li>
+                                <li><strong>Dynamic Imports:</strong> Optimized performance with code splitting and lazy loading.</li>
+                            </ul>
+
+                            <h3>Outstanding Features</h3>
+                            <ul>
+                                <li><strong>4+ Unique Homepage Designs:</strong> Multiple pre-built homepage layouts to choose from.</li>
+                                <li><strong>30+ Ready-to-Use Pages:</strong> Comprehensive set of pages including services, team, testimonials, blog, contact, and more.</li>
+                                <li><strong>App Router Architecture:</strong> Modern Next.js App Router for optimized routing and loading states.</li>
+                                <li><strong>Component-Based Structure:</strong> Modular design with reusable components for easy customization.</li>
+                                <li><strong>Fully Responsive:</strong> Perfect viewing experience across all devices - desktop, tablet, and mobile.</li>
+                                <li><strong>Video Integration:</strong> Seamless YouTube video embedding with modal popups.</li>
+                                <li><strong>Animated Text Effects:</strong> Multiple text animation styles for engaging content presentation.</li>
+                                <li><strong>Interactive Elements:</strong> Accordion components, before/after sliders, and more.</li>
+                                <li><strong>SEO Optimized:</strong> Built with best practices for search engine visibility.</li>
+                                <li><strong>Smooth Animations:</strong> Page transitions and scroll-based animations for a premium feel.</li>
+                                <li><strong>Customizable Headers & Footers:</strong> Multiple header and footer styles to match your brand.</li>
+                                <li><strong>Optimized Performance:</strong> Fast loading times and optimal Core Web Vitals.</li>
+                                <li><strong>Cross-Browser Compatible:</strong> Works flawlessly across all modern browsers.</li>
+                            </ul>
+
+                            <h3>Business-Ready Features</h3>
+                            <ul>
+                                <li><strong>Appointment Booking:</strong> Integrated booking functionality for patient appointments.</li>
+                                <li><strong>Service Showcases:</strong> Highlight your dental services with attractive layouts.</li>
+                                <li><strong>Team Member Profiles:</strong> Feature your dental professionals with dedicated profile pages.</li>
+                                <li><strong>Testimonial Carousels:</strong> Display patient reviews and testimonials.</li>
+                                <li><strong>Blog Section:</strong> Share dental health tips and practice news.</li>
+                                <li><strong>Contact Forms:</strong> Multiple contact form layouts with validation.</li>
+                                <li><strong>Pricing Plans:</strong> Showcase your service packages and pricing options.</li>
+                                <li><strong>FAQ Sections:</strong> Answer common patient questions with interactive accordions.</li>
+                                <li><strong>Gallery Components:</strong> Display your clinic and treatment results.</li>
+                                <li><strong>Social Media Integration:</strong> Connect with patients across platforms.</li>
+                            </ul>
+
+                            <p><strong>DentalX NextJS</strong> template provides everything you need to create a professional, modern website for your dental practice. With its clean design, extensive customization options, and performance-optimized codebase, you'll be able to establish a compelling online presence that attracts new patients and enhances your practice's reputation.</p>
+
+                            <p>Whether you're building a website for a small dental clinic or a large healthcare organization, <strong>DentalX NextJS</strong> offers the perfect balance of aesthetics and functionality to showcase your services and connect with your patients effectively.</p>
+
+
+                            <h3>What's Included</h3>
+                            <ul>
+                                <li>NextJs template</li>
+                                <li>Documentation</li>
+                            </ul>
+
+                            <h3>Support & Updates</h3>
+                            <ul>
+                                <li>Dedicated support system with 12-24 hour response time</li>
+                                <li>Regular updates and feature additions</li>
+                                <li>Lifetime access to updates</li>
+                                <li>Six months of included support (extensible)</li>
+                            </ul>
+
+                            <h3>Technical Requirements</h3>
+                            <ul>
+                                <li>Node.js 18+ recommended</li>
+                                <li>Basic knowledge of React and Next.js</li>
+                                <li>Familiarity with TypeScript (optional but recommended)</li>
+                            </ul>
+
+                            <h3>Note</h3>
+                            <ul>
+                                <li>All preview images are for demonstration purposes only and are not included in the final package.</li>
+                                <li>This is NextJS template, not a WordPress template</li>
+                            </ul>
+
+
+                            <h3>Changelog</h3>
+                            <pre>
+    VERSION 1.0.0
+    - First release.
+</pre>
+
+                            <h2 id="get-started">GET STARTED</h2>
+                            <h3 id="folder-structure">Folder Structure</h3>
+                            <div class="files-folder-lists ">
+                                <ul class="perfect-scrollbar">
+                                    <li><i class="fas fa-folder"></i><code>/app</code>
+                                        <ul>
+                                            <li><i class="fas fa-folder"></i><code>/404s</code></li>
+                                            <li><i class="fas fa-folder"></i><code>/about</code></li>
+                                            <li><i class="fas fa-folder"></i><code>/blog</code></li>
+                                            <li><i class="fas fa-folder"></i><code>/...</code></li>
+                                        </ul>
+                                    </li>
+                                    <li><i class="fas fa-folder"></i><code>/components</code>
+                                        <ul>
+                                            <li><i class="fas fa-folder"></i><code>/elements</code>
+                                                <ul>
+                                                    <li><i class="fas fa-file-alt"></i><code>/BackToTop.tsx</code></li>
+                                                    <li><i class="fas fa-file-alt"></i><code>/Pagination.tsx</code></li>
+                                                    <li><i class="fas fa-file-alt"></i><code>/...</code></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li><i class="fas fa-folder"></i><code>/layout</code>
+                                                <ul>
+                                                    <li><i class="fas fa-folder"></i><code>/footer</code>
+                                                        <ul>
+                                                            <li><i class="fas fa-file-alt"></i><code>/Footer1.tsx</code></li>
+                                                            <li><i class="fas fa-file-alt"></i><code>/Footer2.tsx</code></li>
+                                                            <li><i class="fas fa-file-alt"></i><code>/Footer3.tsx</code></li>
+                                                            <li><i class="fas fa-file-alt"></i><code>/Footer4.tsx</code></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><i class="fas fa-folder"></i><code>/header</code>
+                                                        <ul>
+                                                            <li><i class="fas fa-file-alt"></i><code>/Header1.tsx</code></li>
+                                                            <li><i class="fas fa-file-alt"></i><code>/Header2.tsx</code></li>
+                                                            <li><i class="fas fa-file-alt"></i><code>/Header3.tsx</code></li>
+                                                            <li><i class="fas fa-file-alt"></i><code>/Header4.tsx</code></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><i class="fas fa-file-alt"></i><code>/Layout.tsx</code></li>
+                                                    <li><i class="fas fa-file-alt"></i><code>/MobileMenu.tsx</code></li>
+                                                    <li><i class="fas fa-file-alt"></i><code>/...</code></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li><i class="fas fa-folder"></i><code>/sections</code>
+                                                <ul>
+                                                    <li><i class="fas fa-folder"></i><code>/404</code></li>
+                                                    <li><i class="fas fa-folder"></i><code>/about</code></li>
+                                                    <li><i class="fas fa-folder"></i><code>/blog</code></li>
+                                                    <li><i class="fas fa-folder"></i><code>/contact</code></li>
+                                                    <li><i class="fas fa-folder"></i><code>/...</code></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><i class="fas fa-folder"></i><code>/public</code>
+                                    <li><i class="fas fa-file-alt"></i><code>/.eslintrc.json</code></li>
+                                    <li><i class="fas fa-file-alt"></i><code>/.gitignore</code></li>
+                                    <li><i class="fas fa-file-alt"></i><code>/next-env.d.ts</code></li>
+                                    <li><i class="fas fa-file-alt"></i><code>/next.config.js</code></li>
+                                    <li><i class="fas fa-file-alt"></i><code>/package.json</code></li>
+                                    <li><i class="fas fa-file-alt"></i><code>/README.md</code></li>
+                                </ul>
+                            </div>
+                            <h3 id="app-structure">Structure</h3>
+                            <p>layout.tsx Structure</p>
+                            <pre class="brush: javascript">
+                                <!--
+                                    import "/public/assets/css/plugins/bootstrap.min.css";
+                                    import "/public/assets/css/plugins/aos.css";
+                                    import "/public/assets/css/plugins/all.css";
+                                    import "/public/assets/css/plugins/nice-select.css";
+                                    import "/public/assets/css/plugins/barfiller.css";
+
+                                    import "/public/assets/css/style.css";
+
+                                    import type { Metadata } from "next";
+                                    import { Figtree } from "next/font/google";
+
+                                    const figtree = Figtree({
+                                        weight: ["400", "500", "600", "700"],
+                                        subsets: ["latin"],
+                                        display: "swap",
+                                    });
+
+                                    export const metadata: Metadata = {
+                                        title: "DentalX - Multi-purpose Bootstrap 5 Next.js Template",
+                                        description: "Generated by DentalX - Multi-purpose Bootstrap 5 Next.js Template",
+                                    };
+
+                                    export default function RootLayout({
+                                        children,
+                                    }: Readonly<{
+                                        children: React.ReactNode;
+                                    }>) {
+                                        return (
+                                            <html lang="en">
+                                                <body className={`${figtree.className}`}>{children}</body>
+                                            </html>
+                                        );
+                                    }
+                                -->
+                            </pre>
+                            <h3 id="dependencies">Dependencies</h3>
+                            <p>package.json</p>
+                            <pre class="brush: javascript">
+                                "dependencies": {
+                                    "@types/jquery": "^3.5.32",
+                                    "aos": "^2.3.4",
+                                    "bootstrap": "^5.3.3",
+                                    "gsap": "^3.12.7",
+                                    "isotope-layout": "^3.0.6",
+                                    "next": "^15.3.2",
+                                    "react": "^18",
+                                    "react-before-after-slider-component": "^1.1.8",
+                                    "react-dom": "^18",
+                                    "react-modal-video": "^2.0.2",
+                                    "split-text": "^1.0.0",
+                                    "swiper": "^11.2.6",
+                                    "wowjs": "^1.1.3"
+                                  },
+                                  "devDependencies": {
+                                    "@types/aos": "^3.0.7",
+                                    "@types/bootstrap": "^5.2.10",
+                                    "@types/isotope-layout": "^3.0.14",
+                                    "@types/node": "^22",
+                                    "@types/react": "^18",
+                                    "@types/react-dom": "^18",
+                                    "@types/react-modal-video": "^1.2.3",
+                                    "eslint": "^9",
+                                    "eslint-config-next": "15.0.3",
+                                    "typescript": "^5"
+                                  }
+                            </pre>
+                            <h3 id="routing">Routing</h3>
+                            <p>The Next.js router allows you to do client-side route transitions between pages, similar to a single-page application</p>
+                            <p>A React component called Link is provided to do this client-side route transition.</p>
+                            <pre class="brush: javascript">
+                                <!--                                
+                                    <ul>
+                                        <li className="has-dropdown">
+                                            <Link href="#">
+                                                Home
+                                                <span>
+                                                    <i className="fa-regular fa-angle-down" />
+                                                </span>
+                                            </Link>
+                                            <div className="vl-mega-menu">
+                                                <div className="vl-home-menu">
+                                                    <div className="row gx-4 row-cols-1 row-cols-md-1 row-cols-lg-4">
+                                                        <div className="col mb-25">
+                                                            <div className="vl-home-thumb br-8 fix">
+                                                                <div className="vl-thumb">
+                                                                    <img className="w-100" src="assets/img/demo/vl-demo-1.1.png" alt="" />
+                                                                </div>
+                                                                <div className="vl-thumb-btn">
+                                                                    <Link href="/" className="vl-btn-primary mb-20">
+                                                                        Multi Page
+                                                                        <span>
+                                                                            <i className="fa-solid fa-arrow-right" />
+                                                                        </span>
+                                                                    </Link>
+                                                                    <Link href="/index-single-one" className="vl-btn-primary">
+                                                                        One Page
+                                                                        <span>
+                                                                            <i className="fa-solid fa-arrow-right" />
+                                                                        </span>
+                                                                    </Link>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div className="col mb-25">
+                                                            <div className="vl-home-thumb br-8 fix">
+                                                                <div className="vl-thumb">
+                                                                    <img className="w-100" src="assets/img/demo/vl-demo-1.2.png" alt="" />
+                                                                </div>
+                                                                <div className="vl-thumb-btn">
+                                                                    <Link href="/index-2" className="vl-btn-primary mb-20">
+                                                                        Multi Page
+                                                                        <span>
+                                                                            <i className="fa-solid fa-arrow-right" />
+                                                                        </span>
+                                                                    </Link>
+                                                                    <Link href="/index-single-two" className="vl-btn-primary">
+                                                                        One Page
+                                                                        <span>
+                                                                            <i className="fa-solid fa-arrow-right" />
+                                                                        </span>
+                                                                    </Link>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div className="col mb-25">
+                                                            <div className="vl-home-thumb br-8 fix">
+                                                                <div className="vl-thumb">
+                                                                    <img className="w-100" src="assets/img/demo/vl-demo-1.3.png" alt="" />
+                                                                </div>
+                                                                <div className="vl-thumb-btn">
+                                                                    <Link href="/index-3" className="vl-btn-primary mb-20">
+                                                                        Multi Page
+                                                                        <span>
+                                                                            <i className="fa-solid fa-arrow-right" />
+                                                                        </span>
+                                                                    </Link>
+                                                                    <Link href="/index-single-three" className="vl-btn-primary">
+                                                                        One Page
+                                                                        <span>
+                                                                            <i className="fa-solid fa-arrow-right" />
+                                                                        </span>
+                                                                    </Link>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div className="col mb-25">
+                                                            <div className="vl-home-thumb br-8 fix">
+                                                                <div className="vl-thumb">
+                                                                    <img className="w-100" src="assets/img/demo/vl-demo-1.4.png" alt="" />
+                                                                </div>
+                                                                <div className="vl-thumb-btn">
+                                                                    <Link href="/index-4" className="vl-btn-primary mb-20">
+                                                                        Multi Page
+                                                                        <span>
+                                                                            <i className="fa-solid fa-arrow-right" />
+                                                                        </span>
+                                                                    </Link>
+                                                                    <Link href="/index-single-four" className="vl-btn-primary">
+                                                                        One Page
+                                                                        <span>
+                                                                            <i className="fa-solid fa-arrow-right" />
+                                                                        </span>
+                                                                    </Link>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <Link href="/about">About us</Link>
+                                        </li>
+                                        <li className="has-dropdown">
+                                            <Link href="#">
+                                                Services
+                                                <span>
+                                                    <i className="fa-regular fa-angle-down" />
+                                                </span>
+                                            </Link>
+                                            <ul className="sub-menu">
+                                                <li>
+                                                    <Link href="/service">Service</Link>
+                                                </li>
+                                                <li>
+                                                    <Link href="/service-left">Service Left</Link>
+                                                </li>
+                                                <li>
+                                                    <Link href="/service-right">Service Right</Link>
+                                                </li>
+                                                <li>
+                                                    <Link href="/service-single">Service Single</Link>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li className="has-dropdown">
+                                            <Link href="#">
+                                                Pages
+                                                <span>
+                                                    <i className="fa-regular fa-angle-down" />
+                                                </span>
+                                            </Link>
+                                            <ul className="sub-menu">
+                                                <li>
+                                                    <Link href="/team">Team</Link>
+                                                </li>
+                                                <li>
+                                                    <Link href="/testimonial">Testimonial</Link>
+                                                </li>
+                                                <li>
+                                                    <Link href="/faq">FAQ</Link>
+                                                </li>
+                                                <li>
+                                                    <Link href="/pricing-plan">Pricing Plan</Link>
+                                                </li>
+                                                <li>
+                                                    <Link href="/404">404</Link>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li className="has-dropdown">
+                                            <Link href="#">
+                                                Blog
+                                                <span>
+                                                    <i className="fa-regular fa-angle-down" />
+                                                </span>
+                                            </Link>
+                                            <ul className="sub-menu">
+                                                <li>
+                                                    <Link href="/blog">Blog</Link>
+                                                </li>
+                                                <li>
+                                                    <Link href="/blog-left">Blog Left</Link>
+                                                </li>
+                                                <li>
+                                                    <Link href="/blog-right">Blog Right</Link>
+                                                </li>
+                                                <li>
+                                                    <Link href="/blog-single">Blog Single</Link>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <Link href="/contact">Contact</Link>
+                                        </li>
+                                    </ul>
+                                -->
+                            </pre>
+                            <p>In the example above we have multiple links, each one maps a path (href) to a known page:</p>
+                            <ul>
+                                <li>/ → pages/index.js</li>
+                                <li>/page-about → pages/page-about.js</li>
+                            </ul>
+                            <p>Any in the viewport (initially or through scroll) will be prefetched by default (including the corresponding data) for pages using Static Generation. The corresponding data for server-rendered routes is not prefetched.</p>
+                            <h3 id="deployment">Deployment</h3>
+                            <p>If you haven't already done so, push your Next.js app to a Git provider of your choice: GitHub, GitLab, or BitBucket. Your repository can be private or public.</p>
+                            <p><strong>Then, follow these steps:</strong></p>
+                            <ul>
+                                <li>Sign up to Vercel (no credit card is required).</li>
+                                <li>After signing up, you'll arrive on the "Import Project" page. Under "From Git Repository", choose the Git provider you use and set up an integration. (Instructions: GitHub / GitLab / BitBucket).</li>
+                                <li>Once that's set up, click "Import Project From ..." and import your Next.js app. It auto-detects that your app is using Next.js and sets up the build configuration for you. No need to change anything — everything should work just fine!</li>
+                                <li>After importing, it'll deploy your Next.js app and provide you with a deployment URL</li>
+                                <li>To get more help on the deployment checkout <a href="https://vercel.com/solutions/nextjs#the-easiest-way-to-deploy" target="_blank"></a></li>
+                            </ul>
+                            <h2 id="update">UPDATE</h2>
+                            <h3>Important Note:</h3>
+                            <p>- Backup <strong>your website</strong> and <strong>template folders</strong> completely to make sure you have a restore point in case of any complications.</p>
+                            <h3>Update using FTP</h3>
+                            <ol>
+                                <li>Download the latest version of the template to your device.</li>
+                                <li>Connect to your hosting via FTP software</li>
+                                <li>Upload the template folder you unzipped to your site folder</li>
+                                <li>You should be asked to confirm overwriting of this folder and its contents. Confirm the overwrite.</li>
+                            </ol>
+                            <h2 id="creadit">SOURCES & CREDITS</h2>
+                            <div class="script-source">
+                                <ul>
+                                    <li>
+                                        <a href="https://www.pexels.com/" rel="nofollow">Pexels.com</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://nextjs.org/" rel="nofollow">NextJS Framework</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://swiperjs.com/react" rel="nofollow">React Swiper</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://fontawesome.com/" rel="nofollow">Font Awesome</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://getbootstrap.com/" rel="nofollow">Bootstrap 5</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://greensock.com/gsap/" rel="nofollow">GSAP Animation</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://michalsnik.github.io/aos/" rel="nofollow">AOS - Animate On Scroll</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://isotope.metafizzy.co/" rel="nofollow">Isotope Layout</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.npmjs.com/package/react-modal-video" rel="nofollow">React Modal Video</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.npmjs.com/package/react-before-after-slider-component" rel="nofollow">React Before After Slider</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.npmjs.com/package/wowjs" rel="nofollow">WOW.js</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.npmjs.com/package/split-text" rel="nofollow">Split Text</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.typescriptlang.org/" rel="nofollow">TypeScript</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://reactjs.org/" rel="nofollow">React</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <h2 id="thanks"> THANK YOU</h2>
+                            <p>Thank you so much for using this template.
+                            <p><strong> - AliThemes Team - </strong></p>
+                        </section>
+                        <!-- End of #section-10 -->
+                    </div>
+                    <!-- End of .filterable-wrapper -->
+                </main>
+            </div>
+            <!-- End of .main-content -->
+        </div>
+        <!-- End of .container -->
+    </div>
+    <!-- End of .main-content -->
+    <footer class="page-footer">
+        <div class="container-fluid text-center">
+            <p id="copyright">&copy; <span class="current-year">2025</span>, <strong class="text-brand">Dentalx</strong> - Dentist & Dental Clinic NextJS Template</p>
+        </div>
+        <!-- End of .page-footer -->
+    </footer>
+    <!-- End of .page-footer -->
+    <!-- jQuery -->
+    <script src="assets/js/vendor/jquery.min.js"></script>
+    <script src="assets/js/vendor/jquery-migrate.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/vendor/perfect-scrollbar.js"></script>
+    <!-- jQuery Easing Plugin -->
+    <script src="assets/js/vendor/easing-1.3.js"></script>
+    <!-- Custom Script -->
+    <script src="assets/js/main.js"></script>
+    <script>
+        if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) {
+            document.write('<script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@1"><\/script>');
+            document.write('<script src="assets/js/ie.js"><\/script>');
+        }
+    </script>
+    <script type="text/javascript" src="assets/syntax-highlighter/scripts/shCore.js"></script>
+    <script type="text/javascript" src="assets/syntax-highlighter/scripts/shBrushXml.js"></script>
+    <script type="text/javascript" src="assets/syntax-highlighter/scripts/shBrushCss.js"></script>
+    <script type="text/javascript" src="assets/syntax-highlighter/scripts/shBrushJScript.js"></script>
+    <script type="text/javascript" src="assets/syntax-highlighter/scripts/shBrushPhp.js"></script>
+    <script type="text/javascript">
+        SyntaxHighlighter.all()
+    </script>
+    <script>
+        // Update copyright year
+        $(document).ready(function () {
+            var currentYear = new Date().getFullYear();
+            $('.current-year').text(currentYear);
+        });
+    </script>
+</body>
+
+</html>
