@@ -7,7 +7,7 @@ export default function Header({ scroll, isMobileMenu, mainMenuStyle, handleMobi
     return (
         <>
             <header>
-                <div id="vl-header-sticky" className={`vl-header-area vl-transparent-header ${scroll ? "header-sticky top-0 position-fixed" : ""}`}>
+                <div  className={`vl-header-area vl-transparent-header ${scroll ? "header-sticky top-0 position-fixed" : ""}`}>
                     <div className="container">
                         <div className="row header-style-1 align-items-center">
                             <div className="col-lg-3 col-md-6 col-6">
